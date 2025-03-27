@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+        <property name="hibernate.connection.url">jdbc:oracle:thin:@log660ora12c.logti.etsmtl.ca:1521:LOG660</property>
+        <property name="hibernate.connection.username">EQUIPE108</property>
+		<property name="hibernate.connection.password">n3VBzFGN</property>
+        <property name="dialect">org.hibernate.dialect.OracleDialect</property>
+        <property name="show_sql">true</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+
+        <mapping class="org.log660.Client" />
+        <mapping class="org.log660.Film" />
+        <mapping class="org.log660.ActeurRealisateur" />
+        <mapping class="org.log660.GenreFilm" />
+        <mapping class="org.log660.PaysProduction" />
+        <mapping class="org.log660.Scenariste" />
+        <mapping class="org.log660.BandeAnnoncesFilm" />
+        <mapping class="org.log660.RoleFilm" />
+        <mapping class="org.log660.LocationClient" />
+        <mapping class="org.log660.ForfaitLocation" />
+        <mapping class="org.log660.VUE_INDICE_CORRELATION" />
+        <mapping class="org.log660.VUE_MOYENNE_COTES" />
+
+    </session-factory>
+</hibernate-configuration>
